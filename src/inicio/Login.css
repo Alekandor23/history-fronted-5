@@ -1,0 +1,224 @@
+.login {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.login-flecha{
+    display: flex;
+    justify-content:left;
+    width: 100%;
+    padding-top: 3%;
+    padding-left: 8%;
+}
+
+.btn-img-login {
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    border-radius: 50%;
+    background: linear-gradient(90deg, rgb(63, 31, 189) 0%, rgba(98, 195, 222, 0.813) 35%, rgb(122, 62, 211) 100%);
+}
+
+.logo-login {
+    width: 100%;
+    max-width: 210px;
+    height: 110px;
+    border: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 12px;
+}
+
+.img-logo-login {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-screen {
+    background-color: #fffefe;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    border-radius: 10px;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.contenedor-logo {
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #000;
+    margin: 0 auto 1rem auto;
+}
+
+.app-title h1 {
+    font-size: 3.8rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.Contenedor-tx-login {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 30px;
+    align-items: center;
+}
+
+.login-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.control-group {
+    position: relative;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    position: relative;
+    max-width: 500px;
+}
+
+.input-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.login-texto {
+    width: 100%;
+    max-width: 700px;
+    padding: 0.8rem;
+    border-radius: 25px;
+    outline: none;
+    background-color: #f7f7f7;
+    border: 1px solid #1c303d;
+    align-content: flex-start;
+    font-size: 1rem;
+    color: #000000;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+.login-texto::placeholder {
+    color: #aaa;
+}
+
+#ojo {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateX(-90%);
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    color: #007bff;
+    pointer-events: auto;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.login-button,
+.signup-button {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 200px;
+    background-color: #001745;
+    color: #fff;
+    margin: 0 auto;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover,
+.signup-button:hover {
+
+    background-color: #457b9d;
+}
+
+/* Estilos para tablets y celulares */
+@media (max-width: 768px) {
+    .login-screen {
+        padding: 15px;
+    }
+
+    .app-title h1 {
+        font-size: 1.75rem;
+    }
+
+    .login-field {
+        padding: 8px;
+        font-size: 0.95rem;
+    }
+
+    .login-button,
+    .signup-button {
+        padding: 8px;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-screen {
+        padding: 10px;
+    }
+
+    .app-title h1 {
+        font-size: 1.5rem;
+    }
+
+    .login-texto {
+        padding: 6px;
+        font-size: 0.9rem;
+        width: 300px;
+    }
+
+    .login-button,
+    .signup-button {
+        padding: 6px;
+        font-size: 0.9rem;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .login-button,
+    .signup-button {
+        margin: 5px 0;
+    }
+}
+@media (max-width: 468px) {
+    #ojo {
+        position: absolute;
+        transform: translateX(-70%);
+        transform: translateY(-50%);
+        right: 90px;
+        font-size: 1.2rem;
+    }
+}

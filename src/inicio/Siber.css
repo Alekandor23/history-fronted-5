@@ -1,0 +1,177 @@
+.sidebar-custom {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 77px;
+  height: calc(100vh - 50px);
+  overflow-y: auto;
+  background-color: #f1faee;
+  position: absolute;
+}
+
+.sidebar-custom .offcanvas-header {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  max-height: 90px;
+  align-items: center;
+  padding: 15px;
+  background-color: #1d3557;
+  color: #ffffff;
+}
+
+.offcanvas-title {
+  padding: auto;
+  transform: translateY(60%);
+}
+
+.sidebar-custom .list-group-item {
+  cursor: pointer;
+  padding: 10px 15px;
+  border: none;
+  color: #1d3557;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-custom .list-group-item:hover {
+  background-color: #8db3b4;
+  color: #1d3557;
+}
+
+/* Estilo para los elementos de la lista */
+.list-group-item {
+  display: flex;
+  background-color: #153d93;
+  color: #ffffff;
+  border: none;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+}
+
+.list-group-item .btn-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.list-group-item .btn-link:hover {
+  color: #a8dadc;
+}
+
+/* Scroll en listas largas */
+.list-group {
+  display: flex;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 300px;
+  max-height: 300px;
+}
+
+/* Hover para el elemento de la lista */
+.list-group-item:hover {
+  background-color: #457b9d;
+  /* Cambio de color en hover */
+}
+
+/* Botón de categoría y país */
+.accordion-button {
+  display: flex;
+  background-color: #1d3557;
+  color: #ffffff;
+  border: none;
+}
+
+.accordion-button:hover {
+  background-color: #457b9d;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #1d3557;
+  color: #ffffff;
+}
+
+.list-group-filtros {
+  display: flex;
+  border-radius: 8px;
+  max-height: auto;
+  overflow-y: visible;
+}
+
+.list-group-filtros.scrollable {
+  display: flex;
+  max-height: 200px;
+  overflow-y: scroll;
+}
+
+
+/* Estilo para el cuerpo de la lista desplegable */
+.accordion-body {
+  display: flex;
+  max-height: 340px;
+  justify-content: center;
+  background-color: #f1faee;
+}
+
+/* Espacio adicional en la parte superior del dropdown */
+.dropdown.mt-3 {
+  margin-top: 1rem;
+}
+
+.btn-link {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .sidebar-custom {
+    padding: 5px;
+    margin-top: 77px;
+  }
+
+  .accordion-button {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .accordion-body {
+    max-height: 300px;
+  }
+
+  .list-group-item {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar-custom {
+    max-width: 200px;
+    padding: 1px;
+  }
+
+  .offcanvas-header {
+    padding: 0px;
+  }
+
+  .accordion-button {
+    font-size: 0.85rem;
+  }
+
+  .accordion-body {
+    max-height: 250px;
+  }
+
+  .list-group {
+    padding: 0;
+  }
+
+  .list-group-item {
+    font-size: 0.85rem;
+  }
+
+  .btn-link h6 {
+    font-size: 0.85rem;
+  }
+}
+.btn-link.active  {
+  color: #fff;
+  background-color: #001745; /* Cambia a tu color deseado */
+}
